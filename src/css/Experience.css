@@ -1,0 +1,199 @@
+.experience-ctr {
+  height: 115vh;
+  width: 100%;
+  background-color: black;
+}
+
+.timeline-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 5vw 0;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 100vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.exs {
+  list-style: none;
+}
+
+.ex {
+  padding: 1.5vw;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 0.8vw;
+  margin-bottom: 1.5vw;
+}
+
+.ex:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-experience {
+  font-size: 2vw;
+  line-height: 2vw;
+  margin-bottom: 10px;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.timeline-description {
+  font-size: 0.9vw;
+  line-height: 1vw;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.timeline-date {
+  font-size: 0.6vw;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.timeline-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.7vw;
+  margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+  .experience-ctr {
+    height: 140vh;
+  }
+
+  .timeline-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+  }
+
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 10000px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .exs {
+    list-style: none;
+  }
+
+  .ex{
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .ex:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline-experience {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .timeline-description {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  .timeline-date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: white;
+  }
+
+  .timeline-title {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background-color: #E0A800;
+  }
+  .ex{
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+  }
+  .ex:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
+  }
+  .ex:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+      border-radius: 0px 20px 20px 20px;
+  }
+  .ex::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #E0A800;
+      top: 0px;
+  }
+  .ex:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+  }
+  .ex:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+  }
+  .timeline-date {
+      position: absolute;
+      top: -30px;
+  }
+  .ex:hover::before {
+      background-color: white;
+  }
+}

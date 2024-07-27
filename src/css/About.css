@@ -1,0 +1,128 @@
+.about-ctr {
+  /* position: relative; */
+  width: 100%;
+  background-color: black;
+
+}
+
+.about-left-ctr {
+  width: 60%;
+  float: left;
+  height: 35vw;
+  padding: 5vw;
+  background-color: black;
+}
+
+.about-right-ctr {
+  width: 40%;
+  float: right;
+  height: 35vw;
+  padding: 3vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-pfp {
+  height: 25vw;
+  transition: 0.4s;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.about-pfp:hover {
+  transform: scale(1.2);
+}
+
+.about-resume {
+  position: absolute;
+  right: 3vw;
+}
+
+.about-resume-icon {
+  width: 6vw;
+  transition: 0.4s;
+}
+
+.about-resume-icon:hover {
+  transform: scale(1.2);
+}
+
+.about-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 2vw;
+}
+
+.about-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 1vw;
+  padding: 2vw 0 0 ;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-left-ctr {
+    width: 100%;
+    float: left;
+  }
+
+  .about-right-ctr {
+    width: 100%;
+    float: right;
+  }
+  
+  .about-resume {
+    right: 32vw;
+  }
+
+  .about-resume-icon {
+    width: 7vw;
+  }
+
+  .about-title {
+    font-size: 4vw;
+  }
+
+  .about-paragraph {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-left-ctr {
+    height: 40vh;
+  }
+
+  .about-right-ctr {
+    height: 42vh;
+  }
+
+  .about-pfp {
+    height: 50vw;
+  }
+
+  .about-resume {
+    right: 15vw;
+  }
+
+  .about-resume-icon {
+    width: 13vw;
+  }
+
+  .about-title {
+    font-size: 5vw;
+    padding-top: 3vw;
+  }
+
+  .about-paragraph {
+    font-size: 2.5vw;
+  }
+}
